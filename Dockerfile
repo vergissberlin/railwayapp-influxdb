@@ -1,3 +1,9 @@
-ARG version=2.7
+FROM influxdb:2.7
 
-FROM influxdb:${version}
+# 設定 InfluxDB 服務綁定到 PORT=8080（Railway 預設公開 Port）
+ENV DOCKER_INFLUXDB_INIT_MODE=setup
+ENV INFLUXD_HTTP_BIND_ADDRESS=:8080
+
+EXPOSE 8080
+
+CMD ["influxd"]
