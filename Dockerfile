@@ -1,4 +1,4 @@
-ARG version=2.7
+ARG version=2.8
 
 FROM influxdb:${version}
 
