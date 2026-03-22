@@ -119,6 +119,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * Automatic SSL/TLS encryption
 * Regular security updates
 
+## Railway runtime defaults
+
+The template includes `railway.toml` defaults for reliable operations:
+
+* Healthcheck path: `/health`
+* Restart policy: `ON_FAILURE` with retries
+* Dockerfile-based build
+
 ## 📚 Resources
 
 * [InfluxDB Documentation](https://docs.influxdata.com/)
