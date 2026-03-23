@@ -132,3 +132,6 @@ The template includes `railway.toml` defaults for reliable operations:
 * [InfluxDB Documentation](https://docs.influxdata.com/)
 * [Railway Documentation](https://docs.railway.app/)
 * [Template Updates](https://docs.railway.com/reference/templates#updatable-templates)
+
+<!-- footer -->
+[![InfluxDB](https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=influxdb&logoColor=white)](https://github.com/vergissberlin/railwayapp-influxdb)
