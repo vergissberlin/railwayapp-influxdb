@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vergissberlin/railway/main/docs/railway-template.schema.json",
+  "schemaVersion": 1,
+  "project": "railwayapp-influxdb",
+  "repo": "vergissberlin/railwayapp-influxdb",
+  "displayName": "InfluxDB",
+  "publishedCode": "influxdb",
+  "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-influxdb/main/template-header.svg",
+  "description": "Deploy InfluxDB on Railway for time-series metrics and analytics.",
+  "workspaceAutomation": false
+}
