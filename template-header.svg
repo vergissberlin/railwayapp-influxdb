@@ -1,0 +1,22 @@
+<svg width="1280" height="270" viewBox="0 0 1280 270" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">InfluxDB header banner</title>
+  <desc id="desc">Flat gradient banner for InfluxDB template with software logo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1021"/>
+      <stop offset="0.55" stop-color="#131B3F"/>
+      <stop offset="1" stop-color="#1F174A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="270" rx="26" fill="url(#bg)"/>
+  <circle cx="1120" cy="68" r="34" fill="#4F46E5" opacity="0.33"/>
+  <circle cx="1185" cy="205" r="56" fill="#06B6D4" opacity="0.15"/>
+  
+      <rect x="64" y="60" width="152" height="152" rx="24" fill="#0B1228" opacity="0.92"/>
+      <image href="data:image/png;base64,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" x="84" y="80" width="112" height="112" preserveAspectRatio="xMidYMid meet"/>
+    
+  <text x="258" y="122" fill="#FFFFFF" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="52" font-weight="800">InfluxDB</text>
+  <text x="258" y="168" fill="#B6C2FF" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="28" font-weight="500">Railway Template</text>
+  <rect x="258" y="188" width="286" height="44" rx="22" fill="#1C285D" stroke="#67E8F9" stroke-opacity="0.6"/>
+  <text x="284" y="216" fill="#CFFAFE" font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700">Deploy on Railway</text>
+</svg>
