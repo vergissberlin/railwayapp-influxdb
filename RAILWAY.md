@@ -2,7 +2,7 @@
 
 This repository packages **InfluxDB** for [Railway](https://railway.app/) using a Dockerfile-based build. Railway builds the image from `Dockerfile`, exposes the HTTP API and UI on port **8086**, and applies deploy settings from `railway.toml` / `railway.json` (including health checks and restart policy).
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/fwbafn?referralCode=2_sIT9)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/fwbafn?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 **Quick deploy:** use the button above or connect this repo in Railway, set the required environment variables (see [README](README.md)), and deploy. After provisioning, use your Railway-generated HTTPS URL; clients typically connect on **443** behind Railway’s proxy.
 
