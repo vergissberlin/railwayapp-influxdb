@@ -6,3 +6,4 @@ healthcheckPath = "/health"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+requiredMountPath = "/var/lib/influxdb2"

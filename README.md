@@ -57,6 +57,10 @@ PORT=8086                                     # Do not change
 * InfluxDB version 2.0 or higher
 * Supports all common InfluxDB clients
 
+## 💾 Persistence
+
+`railway.toml` and `railway.json` declare `requiredMountPath = "/var/lib/influxdb2"`. Attach a Railway volume to that path before production traffic, otherwise buckets and data are lost on every redeploy.
+
 ## 🔄 Updates
 
 This template supports automatic updates via the Railway Template System. Updates are automatically checked and can be applied via pull requests.
