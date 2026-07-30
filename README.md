@@ -34,11 +34,17 @@ DOCKER_INFLUXDB_INIT_ORG=yourorg              # Minimum 5 characters
 DOCKER_INFLUXDB_INIT_BUCKET=yourbucket        # Minimum 5 characters
 DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=yourtoken     # Minimum 50 characters
 DOCKER_INFLUXDB_INIT_MODE=setup               # Do not change
-PORT=8086                                     # Do not change
 ```
+
+`DOCKER_INFLUXDB_INIT_MODE=setup` is only evaluated on the very first start of an
+empty volume. Later deployments reuse the existing database.
 
 ### Optional Configurations
 
+* `PORT`: HTTP port InfluxDB binds to (default: `8086`). Railway ignores the
+  Dockerfile `EXPOSE` directive and routes public traffic to `$PORT`, so leave
+  this variable to Railway unless you also change the domain's target port.
+* `INFLUXD_HTTP_BIND_ADDRESS`: Full bind address, e.g. `:8086`. Overrides `PORT`.
 * `INFLUXDB_RETENTION`: Data retention period (default: 30d)
 * `INFLUXDB_REPLICATION`: Replication factor (default: 1)
 
@@ -133,6 +139,11 @@ The template includes `railway.toml` defaults for reliable operations:
 * Healthcheck path: `/health`
 * Restart policy: `ON_FAILURE` with retries
 * Dockerfile-based build
+
+No custom start command is configured. The image entrypoint
+(`railway-entrypoint.sh`) maps `$PORT` to `INFLUXD_HTTP_BIND_ADDRESS` and then
+delegates to the official InfluxDB entrypoint, which performs the automated
+setup. Overriding the start command in Railway skips both steps.
 
 ## 📚 Resources
 
