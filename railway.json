@@ -10,7 +10,6 @@
         "restartPolicyMaxRetries": 10,
         "healthcheckPath": "/health",
         "healthcheckTimeout": 300,
-        "startCommand": "influxd",
         "requiredMountPath": "/var/lib/influxdb2"
     }
 }
