@@ -7,5 +7,11 @@
   "publishedCode": "influxdb",
   "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-influxdb/main/template-header.svg",
   "description": "Deploy InfluxDB on Railway for time-series metrics and analytics.",
-  "workspaceAutomation": false
+  "workspaceAutomation": false,
+  "logoFile": "logo-influxdb.png",
+  "badge": {
+    "label": "InfluxDB",
+    "color": "22ADF6",
+    "logo": "influxdb"
+  }
 }
