@@ -29,10 +29,10 @@ Deploy influxdb on railway
 
 ```bash
 DOCKER_INFLUXDB_INIT_USERNAME=yourusername     # Minimum 5 characters
-DOCKER_INFLUXDB_INIT_PASSWORD=yourpassword     # Minimum 8 characters
+DOCKER_INFLUXDB_INIT_PASSWORD=                 # Set this in the Railway dashboard as a generated secret (do not hardcode)
 DOCKER_INFLUXDB_INIT_ORG=yourorg              # Minimum 5 characters
 DOCKER_INFLUXDB_INIT_BUCKET=yourbucket        # Minimum 5 characters
-DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=yourtoken     # Minimum 50 characters
+DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=              # Set this in the Railway dashboard as a generated secret (do not hardcode)
 DOCKER_INFLUXDB_INIT_MODE=setup               # Do not change
 ```
 
@@ -65,7 +65,7 @@ empty volume. Later deployments reuse the existing database.
 
 ## 💾 Persistence
 
-`railway.toml` and `railway.json` declare `requiredMountPath = "/var/lib/influxdb2"`. Attach a Railway volume to that path before production traffic, otherwise buckets and data are lost on every redeploy.
+`railway.toml` declares `requiredMountPath = "/var/lib/influxdb2"`. Attach a Railway volume to that path before production traffic, otherwise buckets and data are lost on every redeploy.
 
 ## 🔄 Updates
 
@@ -80,11 +80,14 @@ git clone https://github.com/vergissberlin/railwayapp-influxdb.git
 # Change directory
 cd railwayapp-influxdb
 
+# Copy the example env file and fill in local-only credentials
+cp .env.example .env
+
 # Start container
 docker compose up -d
 ```
 
-Access http://localhost:8086 with credentials from docker-compose.yml
+Access http://localhost:8086 with the credentials you set in your local `.env` file. Never commit `.env` with real values — in Railway, set these as generated secret variables instead of plain text.
 
 ## 🧪 Testing
 
