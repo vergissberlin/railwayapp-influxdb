@@ -16,6 +16,16 @@ Deploy influxdb on railway
 * Health monitoring
 * Optimized production settings
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    Client(["🌐 Client"]) -->|HTTPS| Domain["Railway Public Domain"]
+    Domain -->|"$PORT"| Entry["railway-entrypoint.sh"]
+    Entry --> App["Container\ninfluxdb:2.9"]
+    App --> Volume[("Volume\n/var/lib/influxdb2")]
+```
+
 ## 🚀 Quick Start
 
 1. Click "Deploy on Railway"
