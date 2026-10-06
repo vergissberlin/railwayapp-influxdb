@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.1](https://github.com/vergissberlin/railwayapp-influxdb/compare/v0.2.0...v0.2.1) (2026-08-20)
+
+
+### Documentation
+
+* refresh shared template footer badges ([da4234e](https://github.com/vergissberlin/railwayapp-influxdb/commit/da4234e5d7a5900821c70d7de4a41078df294ecb))
+
+
+### Chores
+
+* update shared template footer ([e033f39](https://github.com/vergissberlin/railwayapp-influxdb/commit/e033f39156b2bbb7d91255bdc8310dfd8ca85d23))
+* update shared template footer ([6aa3c1a](https://github.com/vergissberlin/railwayapp-influxdb/commit/6aa3c1a9e785c120b3e7d639c3f98a38320013d0))
+
 ## [0.2.0](https://github.com/vergissberlin/railwayapp-influxdb/compare/v0.1.0...v0.2.0) (2026-08-14)
 
 
