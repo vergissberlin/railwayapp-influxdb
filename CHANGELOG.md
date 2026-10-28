@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/vergissberlin/railwayapp-influxdb/compare/v0.2.1...v0.2.2) (2026-10-28)
+
+
+### Bug Fixes
+
+* pin influxdb to 2.9.1 ([#17](https://github.com/vergissberlin/railwayapp-influxdb/issues/17)) ([d1349de](https://github.com/vergissberlin/railwayapp-influxdb/commit/d1349de3a7484f095f431f06a3b0a219577f2565))
+
+
+### Documentation
+
+* fix Railway deploy button link and add template forum link ([#15](https://github.com/vergissberlin/railwayapp-influxdb/issues/15)) ([b84ccba](https://github.com/vergissberlin/railwayapp-influxdb/commit/b84ccbab481f56ffab4daac186a1a0a96e48b754))
+
 ## [0.2.1](https://github.com/vergissberlin/railwayapp-influxdb/compare/v0.2.0...v0.2.1) (2026-08-20)
 
 
