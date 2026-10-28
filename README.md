@@ -5,7 +5,7 @@
 
 Deploy influxdb on railway
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/fwbafn?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/influxdb-1?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## ✨ Features
 
@@ -134,6 +134,10 @@ If you find a bug:
 3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open pull request
+
+## 💬 Support
+
+Questions or feedback? Visit the [template forum on Railway Central Station](https://station.railway.com/templates/influx-db-7f4ba6c5).
 
 ## 📝 License
 
