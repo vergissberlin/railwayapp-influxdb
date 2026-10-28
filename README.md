@@ -135,6 +135,10 @@ If you find a bug:
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open pull request
 
+## 💬 Support
+
+Questions or feedback? Visit the [template forum on Railway Central Station](https://station.railway.com/templates/influx-db-7f4ba6c5).
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
